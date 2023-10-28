@@ -32,8 +32,6 @@ from azure.ai.formrecognizer import FormRecognizerClient
 endpoint = Form_Recognizer_Endpoint
 key = AzureKeyCredential(Form_Recognizer_Key)
 
-#pdf_path = "ITIPOLICY1.pdf"
-
 
 #Azure Blob credentials
 Azure_Blob_Connection_String = os.getenv("AZURE_BLOB_CONNECTION_STR")
@@ -63,7 +61,7 @@ def pdf_text(endpoint,key,pdf_path):
             extracted_text.append(line.text)
     return(("").join(extracted_text))      
 
-local_path = "Docs"
+local_path = "https://github.com/Praky13/ChatbotEvolveAI/tree/main/Docs"
 
 text = ""
 for files in os.listdir(local_path):
