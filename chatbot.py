@@ -64,10 +64,14 @@ def pdf_text(endpoint,key,pdf_path):
 local_path = "Docs"
 
 text = ""
-for files in os.listdir(local_path):
-    text+=pdf_text(endpoint,key,files)  
+#for files in os.listdir(local_path):
+#    text+=pdf_text(endpoint,key,files)  
 
 
+text += pdf_text(endpoint,key,"Docs/ITPolicySoftwareNetworking.pdf")
+text += pdf_text(endpoint,key,"Docs/GEM.pdf") 
+text += pdf_text(endpoint,key,"Docs/HRPolicy.pdf") 
+text += pdf_text(endpoint,key,"Docs/SOP-AVU.pdf")
 
 
 
