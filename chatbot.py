@@ -68,10 +68,10 @@ text = ""
 #    text+=pdf_text(endpoint,key,files)  
 
 
-text += pdf_text(endpoint,key,"Docs/ITPolicySoftwareNetworking.pdf")
-text += pdf_text(endpoint,key,"Docs/GEM.pdf") 
-text += pdf_text(endpoint,key,"Docs/HRPolicy.pdf") 
-text += pdf_text(endpoint,key,"Docs/SOP-AVU.pdf")
+text += pdf_text(endpoint,key,"ITPolicySoftwareNetworking.pdf")
+text += pdf_text(endpoint,key,"GEM.pdf") 
+text += pdf_text(endpoint,key,"HRPolicy.pdf") 
+text += pdf_text(endpoint,key,"SOP-AVU.pdf")
 
 
 
